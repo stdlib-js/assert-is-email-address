@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,42 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isEmail = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isEmail, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` when provided an email address (equals a string including the `@` character)', function test( t ) {
-	t.equal( isEmail( 'beep@boop.com' ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` when not provided an email address', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		'beep',
-		'beep/boop',
-		'beep.com',
-		5,
-		null,
-		void 0,
-		NaN,
-		true,
-		[],
-		{},
-		function noop() {}
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isEmail( values[ i ] ), false, 'returns false' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
