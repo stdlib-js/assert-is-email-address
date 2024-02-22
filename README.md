@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isEmail from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-email-address@deno/mod.js';
+import isEmail from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-email-address@v0.2.1-deno/mod.js';
 ```
 
 #### isEmail( value )
@@ -80,7 +80,7 @@ var bool = isEmail( 'beep@boop.com' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isEmail from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-email-address@deno/mod.js';
+import isEmail from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-email-address@v0.2.1-deno/mod.js';
 
 var bool;
 
